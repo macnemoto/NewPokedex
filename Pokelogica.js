@@ -29,9 +29,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
     
    
 
-    if ( neko.types['0'].type.name == "normal"  ) {
+    if ( neko.types['0'].type.name == "normal"  ) { 
 
-      tipoCambio.classList.remove('btn btn-warning');
+      
       $("#tipoCambio").addClass("btn btn-light"); /* */
 
     } else if  (neko.types['0'].type.name == "electric" ){
