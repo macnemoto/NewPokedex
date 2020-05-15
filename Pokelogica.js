@@ -48,6 +48,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
     }else if (type == 'dark') {
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-secondary">'+neko.types['0'].type.name+'</span>';
 
+    }else if (type == 'water') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-primary">'+neko.types['0'].type.name+'</span>';
+
     }
    
     
