@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -23,18 +24,38 @@
     }
   </style>
   <body class="img-fluid" alt="Responsive image" background="wallhaven-p81mje.png">
+    <!-- Cabezera  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Pokedex MJ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
     <!-- Codigo viejo
    
   class="img-fluid" alt="Responsive image" background="wallhaven-p81mje.png">
     <h1>Pokedex</h1>
     <div id="contenido" class="text-capitalize" class="d-inline-flex p-2"></div> -->
-   <div class="container">
+   <div class="container" >
     <div class="row justify-content-md-center ">
-    <div class="card border-dark " style="width: 18rem;">
+    <div class="card border-dark "  style="width: 18rem;margin-top: 70px;">
       <img id="imagenpokemon" class="table table-dark" class="card-img-top" src='' alt="" >
       <div class="card-body">
-        <h5 class="card-title text-center" id="mePona" >Busca a tu Poke!</h5>
-        <p class="card-text" id="habilidadesPokemon">Habilidades de Pokemon.</p>
+        <h5 class="card-title text-center" id="mePona" >Busca a tu Pokemon!</h5>
+        <p class="card-text" id="habilidadesPokemon"></p>
         <hr>
         <p id="tipo"></p>
       </div>
