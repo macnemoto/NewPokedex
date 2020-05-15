@@ -1,8 +1,7 @@
 function buscaPuchamon() {
-var imagen_pokemon  = document.getElementById("imagenpokemon");
-var nombrePokemon   =document.getElementById("nombrePokemon");
-console.log(nombrePokemon);
-var habilidadesPokemon   =document.getElementById("habilidadesPokemon");
+var imagen_pokemon        =   document.getElementById("imagenpokemon");
+var nombrePokemon         =   document.getElementById("nombrePokemon").value;
+var habilidadesPokemon    =  document.getElementById("habilidadesPokemon");
 
 nombrePokemon  = nombrePokemon.toLowerCase();
 fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
