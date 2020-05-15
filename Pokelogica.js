@@ -2,8 +2,8 @@ function buscaPuchamon() {
 var imagen_pokemon        =   document.getElementById("imagenpokemon");
 var nombrePokemon         =   document.getElementById("nombrePokemon").value;
 var habilidadesPokemon    =  document.getElementById("habilidadesPokemon");
-var tipoCambio            =  document.getElementById("tipoCambio");
-var tipo                  =  document.getElementById("tipo");
+var tipoCambio    =  document.getElementById("tipoCambio");
+var tipo   =  document.getElementById("tipo");
 
 
 
@@ -32,16 +32,15 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
     if ( neko.types['0'].type.name == "normal"  ) {
 
       tipoCambio.classList.remove('btn btn-warning');
-      tipoCambio.classList.add('btn btn-primary');
-     /*  $("#tipoCambio").addClass("btn btn-light"); */
+      $("#tipoCambio").addClass("btn btn-light"); /* */
 
     } else if  (neko.types['0'].type.name == "electric" ){
 
       
-
+      $("#tipoCambio").addClass("btn btn-info");
 
     } else if  (neko.types['0'].type.name == "fire") {
-   
+      $("#tipoCambio").addClass("btn btn-danger");
 
     } else {
       console.log("error no hay tipo");
