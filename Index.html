@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -23,7 +22,7 @@
       justify-content: center;
     }
   </style>
-  <body class="img-fluid" alt="Responsive image" background="wallhaven-p81mje.png">
+  <body id="fondo" class="img-fluid" alt="Responsive image" background="wallhaven-p81mje.png">
     <!-- Cabezera  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Pokedex MJ</a>
@@ -49,15 +48,18 @@
   class="img-fluid" alt="Responsive image" background="wallhaven-p81mje.png">
     <h1>Pokedex</h1>
     <div id="contenido" class="text-capitalize" class="d-inline-flex p-2"></div> -->
-   <div class="container" >
-    <div class="row justify-content-md-center ">
-    <div class="card border-dark "  style="width: 18rem;margin-top: 70px;">
+   <div class="container mt-20" >
+    <div class="row justify-content-md-center mt-20 ">
+    <div class="card border-dark mt-20 "  style="width: 18rem;">
       <img id="imagenpokemon" class="table table-dark" class="card-img-top" src='' alt="" >
       <div class="card-body">
         <h5 class="card-title text-center" id="mePona" >Busca a tu Pokemon!</h5>
         <p class="card-text" id="habilidadesPokemon"></p>
         <hr>
-        <p id="tipo"></p>
+        <p id="tipo"></p> 
+        <div class="col-12 text-center py-20">
+          <button id="tipoCambio" type="button" class="btn btn-warning ">Warning</button>
+        </div>
       </div>
       
     </div>
@@ -71,12 +73,17 @@
       <label>Escribe tu nombre Pokemon</label>
       <input type="text" id="nombrePokemon" class="form-control text-center" placeholder="Only name Pokemon">
     </div>
-<div class="col-12 text-center">
-  <button type="button" class="btn btn-dark text-center" onclick="buscaPuchamon();">Buscar Pokemon</button>
+<div class="col-12 text-center ">
+  <button type="button" class="btn btn-dark text-center " onclick="buscaPuchamon();">Buscar Pokemon</button>
 </div>
 
 </div>
  </div>
+
+ <div class="col-12 text-center py-20">
+  <button id="tipoCambio" type="button" class="btn btn-warning ">Warning</button>
+</div>
+ 
  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
