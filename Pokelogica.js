@@ -1,6 +1,6 @@
 function buscaPuchamon() {
 var imagen_pokemon  = document.getElementById("imagenpokemon");
-var nombrePokemon   =document.getElementById("nombrePokemon").value;
+var nombrePokemon   =document.getElementById("nombrePokemon");
 console.log(nombrePokemon);
 var habilidadesPokemon   =document.getElementById("habilidadesPokemon");
 
