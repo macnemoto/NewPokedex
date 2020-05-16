@@ -2,9 +2,9 @@ function buscaPuchamon() {
 var imagen_pokemon        =   document.getElementById("imagenpokemon");
 var nombrePokemon         =   document.getElementById("nombrePokemon").value;
 var habilidadesPokemon    =  document.getElementById("habilidadesPokemon");
-var tipoCambio    =  document.getElementById("tipoCambio");
 var tipo   =  document.getElementById("tipo");
-var buttomSearch = document.getElementById("mePona");
+var tipo2   =  document.getElementById("tipo2");
+
 
 
 nombrePokemon  = nombrePokemon.toLowerCase();
@@ -52,12 +52,36 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-primary">'+neko.types['0'].type.name+'</span>';
 
     }
-   
-    
-    
-    console.log(tipo);
-    
-  
+
+/* Tipo del pokemon dos*/
+var type2 = neko.types['1'].type.name;
+console.log(type2);
+if(type2 == 'electric'){
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-warning">'+neko.types['1'].type.name+'</span>';
+} else if (type2 == 'normal') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-light">'+neko.types['1'].type.name+'</span>';
+
+} else if (type2 == 'fire') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-danger">'+neko.types['1'].type.name+'</span>';
+
+}else if (type2 == 'ice') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-info">'+neko.types['1'].type.name+'</span>';
+
+} else if (type2 == 'grass') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-success">'+neko.types['1'].type.name+'</span>';
+
+}else if (type2 == 'grass') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-success">'+neko.types['1'].type.name+'</span>';
+
+}else if (type2 == 'dark') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-secondary">'+neko.types['1'].type.name+'</span>';
+
+}else if (type2 == 'water') {
+  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-primary">'+neko.types['1'].type.name+'</span>';
+
+}
+
+
   }); 
 }
 
