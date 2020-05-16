@@ -54,6 +54,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
     }
 
 /* Tipo del pokemon dos*/
+
 var type2 = neko.types['1'].type.name;
 console.log(type2);
 if(type2 == 'electric'){
@@ -78,7 +79,7 @@ if(type2 == 'electric'){
 
 }else if (type2 == 'water') {
   tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-primary">'+neko.types['1'].type.name+'</span>';
-
+ 
 }
 
 
