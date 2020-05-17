@@ -58,3 +58,7 @@
     background: url(fuego.jpg);
     width: 286px; height: 286px;
   }
+  .badge-normal {
+    background-color: #cfcfcf;
+    color: azure;
+  }

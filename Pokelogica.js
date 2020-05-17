@@ -33,11 +33,10 @@ function buscaPuchamon() {
       var habilidadPruebaArray = neko.abilities;
       var all_habilidades = '';
       habilidadPruebaArray.forEach(obj => {
-        all_habilidades += '<b>Habilidad: </b>'+obj.ability.name+'<br>' ;
+        all_habilidades += '<b>Habilidad: '+obj.slot+' </b>'+obj.ability.name+'<br>' ;
        console.log(obj);
  
       });
-    
     habilidadesPokemon.innerHTML = all_habilidades;
 
 
