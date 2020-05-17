@@ -36,7 +36,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
 
     } else if (type == 'fire') {
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-danger">'+neko.types['0'].type.name+'</span>';
-
+      $("#imagenpokemon").removeClass("table table-dark");
+      $("#imagenpokemon").addClass("fando");
+     
     }else if (type == 'ice') {
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-info">'+neko.types['0'].type.name+'</span>';
 
