@@ -32,8 +32,10 @@ function buscaPuchamon() {
   
       var habilidadPruebaArray = neko.abilities;
       var all_habilidades = '';
+      var iHabilidades    = 1;
       habilidadPruebaArray.forEach(obj => {
-        all_habilidades += '<b>Habilidad: '+obj.slot+' </b>'+obj.ability.name+'<br>' ;
+        all_habilidades += '<b>Habilidad: '+iHabilidades+' </b>'+obj.ability.name+'<br>' ;
+        iHabilidades++;
        console.log(obj);
  
       });
