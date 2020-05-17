@@ -32,13 +32,12 @@ function buscaPuchamon() {
   
       var habilidadPruebaArray = neko.abilities;
       var all_habilidades = '';
-      console.log(all_habilidades);
       habilidadPruebaArray.forEach(obj => {
-        if (obj.neko.abilities == "empty string" )  {
-          all_habilidades += '<p> <b> Habilidad :</b> ' + neko.abilities + ' <br> </p>';
+        all_habilidades += '<b>Habilidad: </b>'+obj.ability.name+'<br>' ;
+       console.log(obj);
  
-      }
-    });
+      });
+    
     habilidadesPokemon.innerHTML = all_habilidades;
 
 
@@ -99,8 +98,11 @@ function buscaPuchamon() {
         } else if (obj.type.name == 'flying') {
           all_types += '<b>Tipo: </b><span class="badge badge-flying">' + obj.type.name + '</span><br>';
 
-        } else if (obj.type.name == 'fight') {
-          all_types += '<b>Tipo: </b><span class="badge badge-fight">' + obj.type.name + '</span><br>';
+        } else if (obj.type.name == 'fighting') {
+          all_types += '<b>Tipo: </b><span class="badge badge-fighting">' + obj.type.name + '</span><br>';
+
+        }else if (obj.type.name == 'psychic') {
+          all_types += '<b>Tipo: </b><span class="badge badge-psychic">' + obj.type.name + '</span><br>';
 
         }
       });
