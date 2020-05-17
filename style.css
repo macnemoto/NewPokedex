@@ -1,3 +1,40 @@
-#tramp {
-    
-}
+.badge-fantama {
+    background-color: #5e1161;
+    color: azure;
+  }
+  .badge-poison {
+    background-color: #aa22af;
+    color: azure;
+  }
+  .badge-rock {
+    background-color: #8b4b26;
+    color: azure;
+  }
+  .badge-bug {
+    background-color: #5dd377;
+    color: azure;
+  }
+  .badge-steel {
+    background-color: #b4b4b4;
+    color: azure;
+  }
+  .badge-fairy {
+    background-color: #e56ef0;
+    color: azure;
+  }
+  .badge-dragon {
+    background-color: #680c70;
+    color: azure;
+  }
+  .badge-ground {
+    background-color: #d1902f;
+    color: azure;
+  }
+  .badge-flying {
+    background-color: #5e8ba0;
+    color: azure;
+  }
+  .badge-fight {
+    background-color: #6d1111;
+    color: azure;
+  }

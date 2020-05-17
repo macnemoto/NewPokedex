@@ -23,11 +23,12 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
  */
     imagen_pokemon.src = neko.sprites.front_default;
     mePona.innerHTML=' <p> Nombre: '+neko.forms['0'].name+' </p> <hr>' ; 
-    habilidadesPokemon.innerHTML=  ' <p> Habilidad 1: '+neko.abilities['0'].ability.name+' <br>Habilidad 2: '+neko.abilities['1'].ability.name+' </p>';
+    habilidadesPokemon.innerHTML=  ' <p> <b> Habilidad 1 :</b> '+neko.abilities['0'].ability.name+' <br> <b>Habilidad 2:</b> '+neko.abilities['1'].ability.name+' </p>';
     
     
 
     var type = neko.types['0'].type.name;
+    console.log(type);
     if(type == 'electric'){
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-warning">'+neko.types['0'].type.name+'</span>';
     } else if (type == 'normal') {
@@ -47,11 +48,46 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+nombrePokemon+'/')
 
     }else if (type == 'dark') {
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-secondary">'+neko.types['0'].type.name+'</span>';
-
+ 
     }else if (type == 'water') {
       tipo.innerHTML='<b>Tipo: </b><span class="badge badge-primary">'+neko.types['0'].type.name+'</span>';
-
+            
+    }else if (type == 'ghost') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-fantama">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'poison') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-poison">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'rock') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-rock">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'bug') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-bug">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'steel') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-steel">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'fairy') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-fairy">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'dragon') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-dragon">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'ground') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-ground">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'flying') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-flying">'+neko.types['0'].type.name+'</span>';
+            
+    }else if (type == 'fight') {
+      tipo.innerHTML='<b>Tipo: </b><span class="badge badge-fight">'+neko.types['0'].type.name+'</span>';
+            
     }
+
+/* Codigo de Prueba Remover segunda clase*/
+
+
+
 
 /* Tipo del pokemon dos*/
 
@@ -71,17 +107,43 @@ if(type2 == 'electric'){
 } else if (type2 == 'grass') {
   tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-success">'+neko.types['1'].type.name+'</span>';
 
-}else if (type2 == 'grass') {
-  tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-success">'+neko.types['1'].type.name+'</span>';
-
 }else if (type2 == 'dark') {
   tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-secondary">'+neko.types['1'].type.name+'</span>';
 
 }else if (type2 == 'water') {
   tipo2.innerHTML='<b>Tipo 2: </b><span class="badge badge-primary">'+neko.types['1'].type.name+'</span>';
  
+}else if (type2 == 'ghost') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-fantama">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'poison') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-poison">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'rock') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-rock">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'bug') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-bug">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'steel') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-steel">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'fairy') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-fairy">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'dragon') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-dragon">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'ground') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-ground">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'flying') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-flying">'+neko.types['1'].type.name+'</span>';
+        
+}else if (type2 == 'fight') {
+  tipo2.innerHTML='<b>Tipo2: </b><span class="badge badge-fight">'+neko.types['1'].type.name+'</span>';
+        
 }
-
 
   }); 
 }
