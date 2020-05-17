@@ -21,9 +21,29 @@ function buscaPuchamon() {
           console.log(neko.forms['0'].name);
           console.log(neko.types['0'].type.name);
        */
+
       imagen_pokemon.src = neko.sprites.front_default;
       mePona.innerHTML = ' <p> Nombre: ' + neko.forms['0'].name + ' </p> <hr>';
+      /*
       habilidadesPokemon.innerHTML = ' <p> <b> Habilidad 1 :</b> ' + neko.abilities['0'].ability.name + ' <br> <b>Habilidad 2:</b> ' + neko.abilities['1'].ability.name + ' </p>';
+*/
+
+
+  
+      var habilidadPruebaArray = neko.abilities;
+      var all_habilidades = '';
+      console.log(all_habilidades);
+      habilidadPruebaArray.forEach(obj => {
+        if (obj.neko.abilities == "empty string" )  {
+          all_habilidades += '<p> <b> Habilidad :</b> ' + neko.abilities + ' <br> </p>';
+ 
+      }
+    });
+    habilidadesPokemon.innerHTML = all_habilidades;
+
+
+
+
 
 
       var typesArrayPokemon = neko.types;
@@ -85,6 +105,8 @@ function buscaPuchamon() {
         }
       });
       tipo.innerHTML = all_types;
+    
+
       /* var type = neko.types['0'].type.name;
       console.log(type);
       if (type == 'electric') {
